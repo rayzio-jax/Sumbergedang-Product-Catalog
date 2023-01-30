@@ -1,0 +1,75 @@
+#homepage {
+	width: 100%;
+	height: 100%;
+	background: rgb(44, 50, 111) no-repeat;
+	background: -moz-linear-gradient(
+			40deg,
+			rgba(44, 50, 111, 1) 0%,
+			rgba(32, 32, 34, 1) 100%
+		)
+		no-repeat;
+	background: -webkit-linear-gradient(
+			40deg,
+			rgba(44, 50, 111, 1) 0%,
+			rgba(32, 32, 34, 1) 100%
+		)
+		no-repeat;
+	background: linear-gradient(
+			40deg,
+			rgba(44, 50, 111, 1) 0%,
+			rgba(32, 32, 34, 1) 100%
+		)
+		no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c326f",endColorstr="#202022",GradientType=1);
+}
+
+img {
+	display: block;
+	width: 100vw;
+	height: 200px;
+	object-fit: cover;
+}
+
+.carousel-text {
+	@apply font-poppins text-lg md:text-3xl bg-neutral-400 w-fit mx-auto p-3 bg-opacity-50 rounded-lg;
+}
+
+.carousel-img {
+	@apply block object-cover h-[50vh] rounded-md brightness-[80%] hover:brightness-[50%] duration-500;
+}
+
+.page-title {
+	@apply font-poppins text-2xl m-[1rem] md:text-5xl md:m-[2rem] md:ml-[3.5rem] text-white flex-grow;
+}
+.btn-catalog {
+	background-color: #a69a2e;
+	padding: 0.6rem;
+	margin: 0 1.5rem 2rem;
+	@apply duration-500 drop-shadow-lg hover:bg-[#72691E];
+}
+
+.rainbow-text {
+	animation: infinite rainbow 8s ease-in-out;
+}
+
+li {
+	margin: 30px 0;
+}
+
+@keyframes rainbow {
+	0% {
+		color: #ff0000;
+	}
+	25% {
+		color: #ff9a00;
+	}
+	50% {
+		color: #fff400;
+	}
+	75% {
+		color: #89ff00;
+	}
+	100% {
+		color: #ff0000;
+	}
+}

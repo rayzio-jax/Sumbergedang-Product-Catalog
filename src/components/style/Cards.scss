@@ -1,0 +1,29 @@
+#cards {
+	display: block;
+	width: 300px;
+	background-color: #fff;
+	color: #1e3231;
+	font-family: "Roboto", sans-serif;
+	row-gap: 1rem;
+	border-radius: 1rem;
+	padding: 2rem;
+	margin: 5% 1%;
+	box-shadow: 0 0 20px 5px rgba($color: #000000, $alpha: 0.2);
+}
+
+.card-title {
+	font-family: "Poppins", sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 14px 0;
+	width: fit-content;
+}
+.card-text {
+	width: fit-content;
+}
+
+.card-image {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
