@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import "./style/Links.scss";
 
 export default function Links() {
 	return (
-		<div id="links">
-			<p className="text-white font-poppins text-xl md:text-4xl m-4">
-				Berikut beberapa link yang bisa dikunjungi terkait Desa Sumbergedang
+		<div id="links" className="link-box">
+			<p className="text-black font-poppins text-xl md:text-4xl m-4">
+				Sumbergedang memiliki beberapa UMKM yang mmeproduksi berbagai macam
+				produk, untuk selengkapnya bisa cek link di bawah
 			</p>
 			<Link to={"/katalog"}>
 				<button
-					className="text-white text-sm  font-roboto md:tracking-wider 
+					className="text-white text-sm font-roboto md:tracking-wider 
 					rounded-[9px] text-base md:text-xl btn-catalog"
 				>
 					Produk UMKM
