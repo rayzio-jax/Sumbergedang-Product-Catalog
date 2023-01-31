@@ -41,12 +41,6 @@ img {
 .page-title {
 	@apply font-poppins text-2xl m-[1rem] md:text-5xl md:m-[2rem] md:ml-[3.5rem] text-white flex-grow;
 }
-.btn-catalog {
-	background-color: #a69a2e;
-	padding: 0.6rem;
-	margin: 0 1.5rem 2rem;
-	@apply duration-500 drop-shadow-lg hover:bg-[#72691E];
-}
 
 .rainbow-text {
 	animation: infinite rainbow 8s ease-in-out;
