@@ -1,0 +1,12 @@
+.link-box {
+	padding: 1rem;
+	color: #2c326f;
+	background: rgba($color: #fff, $alpha: 0.5);
+}
+
+.btn-catalog {
+	background-color: #26cfa5;
+	padding: 0.6rem;
+	margin: 0 1.5rem 2rem;
+	@apply duration-500 drop-shadow-lg hover:bg-[#1f6c76];
+}
