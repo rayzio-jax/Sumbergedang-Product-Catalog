@@ -1,8 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 import Cards from "./components/Cards";
 import "./sass/Catalog.scss";
 
 export default function Catalog() {
+	const number1 = "6282334721859";
 	return (
 		<div id="catalog">
 			<div className="flex">
@@ -15,40 +18,18 @@ export default function Catalog() {
 			</div>
 			<div className="container mx-auto flex flex-wrap justify-evenly">
 				<Cards
-					image="https://s3.amazonaws.com/www-inside-design/uploads/2020/10/aspect-ratios-blogpost-1x1-1.png"
-					name="Krupuk Ayam"
-					description="Ini adalah krupuk Ayam sehat dan berkhasiat, bisa memperkuat tubuh Anda dalam jangka waktu 2 tahun"
-					whatsapp="+62877463923"
+					btn_id="btn-order-1"
+					image="/product/product1.jpg"
+					name="Boneka Panda"
+					description="Produk boneka buatan pengrajin boneka dari Desa Sumbergedang, Boneka Panda"
+					whatsapp={number1}
 				/>
 				<Cards
-					image="https://s3.amazonaws.com/www-inside-design/uploads/2020/10/aspect-ratios-blogpost-1x1-1.png"
-					name="Krupuk Ayam"
-					description="Ini adalah krupuk Ayam sehat dan berkhasiat, bisa memperkuat tubuh Anda dalam jangka waktu 2 tahun"
-					whatsapp="+62877463923"
-				/>
-				<Cards
-					image="https://s3.amazonaws.com/www-inside-design/uploads/2020/10/aspect-ratios-blogpost-1x1-1.png"
-					name="Krupuk Ayam"
-					description="Ini adalah krupuk Ayam sehat dan berkhasiat, bisa memperkuat tubuh Anda dalam jangka waktu 2 tahun"
-					whatsapp="+62877463923"
-				/>
-				<Cards
-					image="https://s3.amazonaws.com/www-inside-design/uploads/2020/10/aspect-ratios-blogpost-1x1-1.png"
-					name="Krupuk Ayam"
-					description="Ini adalah krupuk Ayam sehat dan berkhasiat, bisa memperkuat tubuh Anda dalam jangka waktu 2 tahun"
-					whatsapp="+62877463923"
-				/>
-				<Cards
-					image="https://s3.amazonaws.com/www-inside-design/uploads/2020/10/aspect-ratios-blogpost-1x1-1.png"
-					name="Krupuk Ayam"
-					description="Ini adalah krupuk Ayam sehat dan berkhasiat, bisa memperkuat tubuh Anda dalam jangka waktu 2 tahun"
-					whatsapp="+62877463923"
-				/>
-				<Cards
-					image="https://s3.amazonaws.com/www-inside-design/uploads/2020/10/aspect-ratios-blogpost-1x1-1.png"
-					name="Krupuk Ayam"
-					description="Ini adalah krupuk Ayam sehat dan berkhasiat, bisa memperkuat tubuh Anda dalam jangka waktu 2 tahun"
-					whatsapp="+62877463923"
+					btn_id="btn-order-2"
+					image="/product/product2.jpg"
+					name="Boneka Jerapah"
+					description="Produk boneka buatan pengrajin boneka dari Desa Sumbergedang, Boneka Jerapah"
+					whatsapp={number1}
 				/>
 			</div>
 		</div>
