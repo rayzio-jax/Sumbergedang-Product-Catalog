@@ -13,7 +13,7 @@ export default function Homepage() {
 			</div>
 			<Carousel className="flex justify-center items-center w-[80vw] mx-auto">
 				<Carousel.Item>
-					<img className="carousel-img" src="/img1.jpg" alt="img1" />
+					<img className="carousel-img" src="/img3.jpg" alt="img1" />
 					<Carousel.Caption>
 						<h3 className="carousel-text">Talang Abang</h3>
 					</Carousel.Caption>
