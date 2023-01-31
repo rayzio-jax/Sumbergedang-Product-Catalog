@@ -27,7 +27,7 @@ export default function Homepage() {
 			</Carousel>
 			<br />
 			<div className="container flex flex-col">
-				<p className="text-white font-poppins text-lg md:text-2xl md:text-justify">
+				<p className="text-white font-poppins text-lg md:text-2xl md:text-justify first-letter:text-2xl first-letter:md:text-5xl">
 					Desa Sumbergedang merupakan salah satu desa yang terletak di Kecamatan
 					Pandaan, Kabupaten Pasuruan, Provinsi Jawa Timur. Desa ini memiliki 2
 					buah lokasi wisata yang sedang dikembangkan yaitu{" "}
