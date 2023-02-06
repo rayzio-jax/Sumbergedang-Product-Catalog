@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import "./style/Links.scss";
+import "./style/Footer.scss";
 
-export default function Links() {
+export default function Footer() {
 	return (
 		<div id="links" className="link-box">
 			<p className="text-black font-poppins text-xl md:text-4xl m-4">
-				Sumbergedang memiliki beberapa UMKM yang mmeproduksi berbagai macam
-				produk, untuk selengkapnya bisa cek link di bawah
+				Sumbergedang Products
 			</p>
 			<Link to={"/katalog"}>
 				<button
