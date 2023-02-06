@@ -10,8 +10,8 @@ export default function Cards(props) {
 				<img src={props.image} alt="product-cards" />
 			</div>
 			<h3 className="card-title">{props.name}</h3>
-			<p className="card-text">{props.description}</p>
-			<div className="mt-2 flex flex-wrap flex-row items-center gap-x-2 gap-y-3">
+			<p className="card-text flex-grow">{props.description}</p>
+			<div className="flex flex-wrap items-center w-fit gap-x-4 gap-y-4">
 				<i class="ri-whatsapp-fill ri-xl"></i>
 				<p className="text-md md:text-lg font-poppins">+{props.whatsapp}</p>
 				<button
