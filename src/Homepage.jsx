@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import "./sass/Homepage.scss";
-import Links from "./components/Links";
+import Footer from "./components/Footer";
 
 export default function Homepage() {
 	const tabang = "Talang Abang";
@@ -13,13 +13,21 @@ export default function Homepage() {
 			</div>
 			<Carousel className="flex justify-center items-center w-[80vw] mx-auto">
 				<Carousel.Item>
-					<img className="carousel-img" src="/img3.jpg" alt="img1" />
+					<img
+						className="carousel-img"
+						src="/talang-abang.jpg"
+						alt="talang-abang"
+					/>
 					<Carousel.Caption>
 						<h3 className="carousel-text">Talang Abang</h3>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img className="carousel-img" src="/img2.jpg" alt="img2" />
+					<img
+						className="carousel-img"
+						src="/taman-bunga.jpg"
+						alt="taman-bunga"
+					/>
 					<Carousel.Caption>
 						<h3 className="carousel-text">Taman Bunga Adn Firdaus</h3>
 					</Carousel.Caption>
@@ -58,7 +66,7 @@ export default function Homepage() {
 					<li data-aos="fade-right">Dusun Sendi</li>
 				</ul>
 			</div>
-			<Links />
+			<Footer />
 		</div>
 	);
 }
