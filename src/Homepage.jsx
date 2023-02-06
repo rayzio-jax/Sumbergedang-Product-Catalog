@@ -43,9 +43,11 @@ export default function Homepage() {
 					Pandaan, Kabupaten Pasuruan, Provinsi Jawa Timur. Desa ini memiliki 2
 					buah lokasi wisata yang sedang dikembangkan yaitu{" "}
 					<span className="underline rainbow-text">Talang Abang</span> dan{" "}
-					<span className="underline rainbow-text">Taman Adn Firdaus</span>.
-					Desa Sumbergedang memiliki berbagai PokMas (Kelompok Masyarakat) dalam
-					bidangnya masing-masing seperti{" "}
+					<span className="underline rainbow-text">
+						Taman Bunga Adn Firdaus
+					</span>
+					. Desa Sumbergedang memiliki berbagai PokMas (Kelompok Masyarakat)
+					dalam bidangnya masing-masing seperti{" "}
 					<span className="font-bold text-[#A0C3D2]">Go4Sumbergedang</span> yang
 					berpusat pada Pengembangan Teknologi dan{" "}
 					<span className="font-bold text-[#A0C3D2]">Thunders</span> yang
