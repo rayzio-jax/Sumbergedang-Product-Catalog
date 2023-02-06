@@ -30,12 +30,16 @@ img {
 	object-fit: cover;
 }
 
+li {
+	margin: 30px 0;
+}
+
 .carousel-text {
 	@apply font-poppins text-lg md:text-3xl bg-neutral-400 w-fit mx-auto p-3 bg-opacity-50 rounded-lg;
 }
 
 .carousel-img {
-	@apply block object-cover h-[50vh] rounded-md brightness-[80%] hover:brightness-[50%] duration-500;
+	@apply block object-cover h-[50vh] rounded-md brightness-[80%] hover:brightness-[50%] hover:scale-[1.1] duration-500;
 }
 
 .page-title {
@@ -44,10 +48,6 @@ img {
 
 .rainbow-text {
 	animation: infinite rainbow 8s ease-in-out;
-}
-
-li {
-	margin: 30px 0;
 }
 
 @keyframes rainbow {
