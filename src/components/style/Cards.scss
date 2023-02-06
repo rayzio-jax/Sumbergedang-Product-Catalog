@@ -1,12 +1,10 @@
 #cards {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	width: 300px;
 	background-color: #fff;
 	color: #1e3231;
 	font-family: "Roboto", sans-serif;
-	row-gap: 1rem;
 	border-radius: 1rem;
 	padding: 2rem;
 	margin: 5% 1%;
@@ -21,10 +19,6 @@
 	@apply md:text-[1.8rem] text-[1.3rem];
 }
 
-.card-text {
-	width: fit-content;
-}
-
 .img-box {
 	height: 250px;
 	overflow: hidden;
@@ -36,4 +30,8 @@
 
 .img-box:hover img {
 	transform: scale(1.5);
+}
+
+button {
+	@apply focus:ring-4 focus:ring-[#3ca4ff];
 }

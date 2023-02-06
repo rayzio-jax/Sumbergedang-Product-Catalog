@@ -1,7 +1,7 @@
 .link-box {
 	padding: 1rem;
 	color: #2c326f;
-	background: rgba($color: #000000, $alpha: 0.8);
+	background: rgba($color: #d8d8d8, $alpha: 0.8) no-repeat;
 }
 
 .btn-catalog {
@@ -9,4 +9,8 @@
 	padding: 0.6rem;
 	margin: 0 1.5rem 2rem;
 	@apply duration-500 drop-shadow-lg hover:bg-[#1f6c76];
+}
+
+button {
+	@apply focus:ring-2 focus:outline-none focus:ring-[#fff];
 }
