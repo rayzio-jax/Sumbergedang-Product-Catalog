@@ -9,7 +9,8 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
-        'arial': ['Arial', 'sans-serif']
+        'arial': ['Arial', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif']
       }
     },
   },
