@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Carousel, CarouselItem } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import Cards from "./components/Cards";
+import ShinyButton from "./components/ShinyButton";
 import "./sass/Catalog.scss";
 
 export default function Catalog() {
@@ -27,7 +28,7 @@ export default function Catalog() {
 					Katalog Produk UMKM
 				</h1>
 				<Link to={"/"} tabIndex={-1}>
-					<button className="btn-home">Profil Desa</button>
+					<ShinyButton className="btn-home" text="Homepage Desa" />
 				</Link>
 			</div>
 			<div className="container mx-auto flex flex-wrap justify-evenly duration-300">
@@ -66,7 +67,7 @@ export default function Catalog() {
 				<Cards
 					btn_id="btn-order-3"
 					image={
-						<Carousel className="rounded-lg">
+						<Carousel>
 							<Carousel.Item>
 								<img
 									src="/product/sepatu-sandal/pdl-shoes.png"
@@ -139,7 +140,19 @@ export default function Catalog() {
 				/>
 				<Cards
 					btn_id="btn-order-5"
-					image={<img src="/product/product3.jpg" alt="products-card" />}
+					image={
+						<Carousel>
+							<Carousel.Item>
+								<img src="/product/boneka/bear.png" alt="boneka-beruang" />
+							</Carousel.Item>
+							<Carousel.Item>
+								<img src="/product/boneka/giraffe.png" alt="boneka-jerapah" />
+							</Carousel.Item>
+							<Carousel.Item>
+								<img src="/product/boneka/panda.png" alt="boneka-panda" />
+							</Carousel.Item>
+						</Carousel>
+					}
 					name="Aneka Boneka"
 					description={
 						<p className="card-text">
