@@ -1,13 +1,16 @@
-import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import "./sass/Homepage.scss";
 import Footer from "./components/Footer";
 
 export default function Homepage() {
-	const tabang = "Talang Abang";
-	const firdaus = "Taman Adn Firdaus";
 	return (
 		<div id="homepage">
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>Profil Sumbergedang</title>
+				<link rel="shortcut icon" href="/home.svg" type="image/x-icon" />
+			</Helmet>
 			<div id="header" className="flex">
 				<h1 className="page-title">Desa Sumbergedang</h1>
 			</div>
