@@ -1,0 +1,44 @@
+.btn-shiny {
+	top: 50%;
+	left: 50%;
+	transform: translate(0);
+	background: #6643b5;
+	line-height: 3;
+	margin: 1.3rem;
+	width: 200px;
+	border: 2px solid #fff;
+	outline: 0;
+	font-size: 1rem;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 3px;
+	box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.2);
+	text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	transition: all 0.5s;
+}
+
+.btn-shiny::after {
+	content: "";
+	position: absolute;
+	width: 150%;
+	height: 150%;
+	background: #fff;
+	left: -25%;
+	transform: skewX(20deg) translateX(-100%);
+	z-index: -1;
+	transition: all 0.5s;
+}
+
+.btn-shiny:hover {
+	color: #6643b5;
+}
+
+.btn-shiny:hover::after {
+	transform: skewX(20deg) translateX(0);
+}
