@@ -4,13 +4,6 @@
 	background: rgba($color: #d8d8d8, $alpha: 0.8) no-repeat;
 }
 
-.btn-catalog {
-	background-color: #26cfa5;
-	padding: 0.6rem;
-	margin: 0 1.5rem 2rem;
-	@apply duration-500 drop-shadow-lg hover:bg-[#1f6c76];
-}
-
 button {
 	@apply focus:ring-2 focus:outline-none focus:ring-[#fff];
 }
