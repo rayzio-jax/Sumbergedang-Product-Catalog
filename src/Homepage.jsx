@@ -14,7 +14,10 @@ export default function Homepage() {
 			<div id="header" className="flex">
 				<h1 className="page-title">Desa Sumbergedang</h1>
 			</div>
-			<Carousel className="flex justify-center items-center w-[80vw] mx-auto">
+			<Carousel
+				pause="hover"
+				className="flex justify-center items-center w-[80vw] mx-auto"
+			>
 				<Carousel.Item>
 					<img
 						className="carousel-img"
