@@ -3,12 +3,10 @@
 	left: 50%;
 	transform: translate(0);
 	background: #6643b5;
-	line-height: 3;
 	margin: 1.3rem;
-	width: 200px;
+	@apply w-fit md:w-[200px] text-[1rem] md:text-[2rem] leading-[2] md:leading-[3] p-2 md:p-0;
 	border: 2px solid #fff;
 	outline: 0;
-	font-size: 1rem;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 	color: #fff;

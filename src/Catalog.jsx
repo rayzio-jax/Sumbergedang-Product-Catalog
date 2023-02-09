@@ -30,7 +30,7 @@ export default function Catalog() {
 					type="image/x-icon"
 				/>
 			</Helmet>
-			<div className="flex mx-16 items-center">
+			<div className="flex mx-0 md:mx-16 items-center">
 				<img
 					src="/catalog-icon.png"
 					className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] m-4"
