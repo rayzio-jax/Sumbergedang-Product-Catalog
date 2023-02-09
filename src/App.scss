@@ -1,9 +1,5 @@
 :root {
 	height: 100%;
 	width: 100%;
-	@apply scrollbar-thin scrollbar-thumb-black scrollbar-track-slate-600;
-}
-
-html {
-	background-color: black;
+	@apply scrollbar-thin scrollbar-thumb-[#E6D875FF] scrollbar-track-slate-600;
 }
