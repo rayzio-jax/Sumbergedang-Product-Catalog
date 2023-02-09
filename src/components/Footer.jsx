@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "./style/Footer.scss";
+import $ from "jquery";
 import ShinyButton from "./ShinyButton";
 
 export default function Footer() {
@@ -9,7 +10,13 @@ export default function Footer() {
 			<p className="text-black font-montserrat text-xl md:text-3xl mx-4 mt-8 font-[400]">
 				&copy; KKN-P UMSIDA 2023
 			</p>
-			<Link to={"/katalog"} tabIndex={-1}>
+			<Link
+				to={"/katalog"}
+				tabIndex={-1}
+				onClick={() => {
+					document.body.scroll(0);
+				}}
+			>
 				<ShinyButton
 					className="text-white text-sm font-roboto md:tracking-wider 
 					rounded-[9px] text-base md:text-xl"
