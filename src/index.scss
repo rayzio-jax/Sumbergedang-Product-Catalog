@@ -5,3 +5,13 @@
 html {
 	box-sizing: border-box;
 }
+
+:root {
+	color-scheme: only light;
+}
+
+*,
+*::before,
+*::after {
+	color-scheme: only light;
+}
