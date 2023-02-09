@@ -1,16 +1,29 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+
 import Cards from "../Cards";
 import Modals from "../Modals";
 
 export default function RempeyekSG() {
+	const whatsapp = "6285330017966";
+	const peyek = ["80gr", "250gr", "Lebih lengkapnya silahkan hubungi seller."];
 	return (
 		<>
 			<Modals
-				title="Rempeyek SG"
-				details={<p></p>}
+				title="Rempeyek Sumbergedang"
+				whatsapp={whatsapp}
 				modalBox="modal-container-9"
 				modal="modal-9"
+				details={
+					<ul className="text-base md:text-lg w-[250px] md:w-fit list-decimal ml-8">
+						<li>
+							{peyek[0]}: <span className="font-semibold">Rp.5000</span>
+						</li>
+						<li>
+							{peyek[1]}: <span className="font-semibold">Rp.12.500</span>
+						</li>
+						{peyek[2]}
+					</ul>
+				}
 			/>
 			<Cards
 				btn_id="btn-order-9"

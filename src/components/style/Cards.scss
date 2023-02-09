@@ -1,7 +1,7 @@
 #cards {
 	display: flex;
 	flex-direction: column;
-	@apply w-[300px] h-[600px] md:h-[800px];
+	@apply w-[300px];
 	background-color: #fff;
 	color: #1e3231;
 	font-family: "Roboto", sans-serif;

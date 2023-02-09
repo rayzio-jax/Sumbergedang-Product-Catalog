@@ -4,11 +4,11 @@ import "./style/Modals.scss";
 
 export default function Modals(props) {
 	const whatsappText =
-		"Halo, apakah stok produk " + "*" + props.product + "*" + " masih ada?";
+		"Halo, produk apa saja yang dijual disini? Apakah Saya bisa melihat daftar jualnya?";
 	return (
 		<div id={props.modalBox} className="modal-container">
 			<div className="modal-flex">
-				<div id={props.modal} className="modal">
+				<div id={props.modal} className="modal scrollbar-none">
 					<div
 						id="close-modal"
 						className="close"
@@ -20,29 +20,28 @@ export default function Modals(props) {
 						<span>&#43;</span>
 					</div>
 					<div className="content">
-						<div className="flex items-center gap-x-3">
+						<div className="flex w-[250px] md:w-max items-center md:gap-x-5">
 							<h2 className="title">{props.title}</h2>
 							<img
 								src="/catalog-icon.png"
 								alt="icon katalog umkm"
-								className="w-[50px] bg-green-700 rounded-full"
+								className="w-[100px] md:w-[80px] bg-green-700 rounded-full"
 							/>
 						</div>
-						<p className="text-lg font-arial mt-4">Harga Produk:</p>
-						{props.details}
+						<div className="flex flex-col">
+							<p className="text-lg md:text-xl font-arial mt-4">
+								Harga Produk:
+							</p>
+							<div>{props.details}</div>
+						</div>
 					</div>
-					<div className="modal-btn">
-						<button
-							className="flex-grow"
-							onClick={() => {
-								window.location = `https://api.whatsapp.com/send?phone=${props.whatsapp}&text=${whatsappText}`;
-							}}
-						>
+					<div className="modal-btn flex items-center">
+						<div className="flex gap-x-1 md:gap-x-4 justify-center items-center md:justify-start">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								width="24"
-								height="24"
+								viewBox="0 0 26 26"
+								width="26"
+								height="26"
 							>
 								<path fill="none" d="M0 0h24v24H0z" />
 								<path
@@ -50,6 +49,16 @@ export default function Modals(props) {
 									fill="rgba(47,204,113,1)"
 								/>
 							</svg>
+							<p className="text-base md:text-lg font-montserrat tracking-wider">
+								+{props.whatsapp}
+							</p>
+						</div>
+						<button
+							className="contact-seller"
+							onClick={() => {
+								window.location = `https://api.whatsapp.com/send?phone=${props.whatsapp}&text=${whatsappText}`;
+							}}
+						>
 							Hubungi Seller
 						</button>
 					</div>

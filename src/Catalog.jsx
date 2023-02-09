@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Carousel } from "react-bootstrap";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/Dropdown";
 import ShinyButton from "./components/ShinyButton";
 import $ from "jquery";
 import "./sass/Catalog.scss";
@@ -24,9 +21,6 @@ export default function Catalog() {
 	$(".close").on("click", () => {
 		$(".modal-container, .modal").fadeOut("slow");
 	});
-	const number1 = "6282334721859";
-	const title = "Pilih Produk";
-	const boneka = ["Boneka Panda", "Boneka Beruang", "Boneka Jerapah"];
 	return (
 		<div id="catalog" className="catalog">
 			<Helmet>
@@ -38,7 +32,7 @@ export default function Catalog() {
 					type="image/x-icon"
 				/>
 			</Helmet>
-			<div className="flex md:mx-[5rem] md:my-[2rem] items-center">
+			<div className="flex md:mx-[5rem] items-center">
 				<img
 					src="/catalog-icon.png"
 					className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] m-4"

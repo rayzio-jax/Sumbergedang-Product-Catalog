@@ -38,7 +38,7 @@ $font: "Source Sans Pro", sans-serif;
 .modal {
 	display: none;
 	position: relative;
-	@apply w-[300px] h-[500px] md:h-[400px] md:w-[660px];
+	@apply w-[340px] h-[500px] md:h-[700px] md:w-[660px];
 	background: #fff;
 	border: solid 2px #000;
 	border-radius: 20px;
@@ -51,17 +51,18 @@ $font: "Source Sans Pro", sans-serif;
 		padding: 30px;
 		@apply w-[200px] md:w-fit;
 		.title {
-			@apply w-[200px] md:w-fit text-[1.3rem] md:text-[2rem];
+			@apply w-fit md:w-full text-[1.3rem] md:text-[2rem];
 			font-weight: 600;
 			font-family: "Montserrat", sans-serif;
 		}
 	}
 	.close {
+		position: fixed;
 		font-family: $font;
 		cursor: pointer;
-		background-color: #24252a;
 		width: 50px;
 		height: 50px;
+		background-color: #24252a;
 		border-radius: 0 0 0 12px;
 		text-align: center;
 		line-height: 50px;
@@ -89,6 +90,12 @@ $font: "Source Sans Pro", sans-serif;
 	color: #fff;
 	padding: 10px;
 	background-color: #24252a;
+}
+
+.contact-seller {
+	display: flex;
+	align-items: center;
+	@apply grow md:text-lg text-base font-montserrat bg-[#453ed3] hover:bg-[#252089] absolute bottom-0 right-0 p-2 md:p-4 h-full;
 	transition: 0.5s;
 	&:hover {
 		background-color: lighten($color: #24252a, $amount: 10%);

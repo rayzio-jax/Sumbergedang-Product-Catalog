@@ -4,13 +4,54 @@ import Cards from "../Cards";
 import Modals from "../Modals";
 
 export default function SepatuSandal() {
+	const whatsapp = "6281336101081";
+	const sepatu = [
+		"PDL Safety Shoes",
+		"Boot Safety Shoes",
+		"Fantofel (PDH)",
+		"PDH Dinas Tali",
+		"Sepatu Sekolah",
+		"Sandal Pria",
+		"Sepatu Sandal",
+		"Sepatu Fantofel",
+		"Lebih lengkapnya silahkan hubungi seller.",
+	];
 	return (
 		<>
 			<Modals
 				title="Sepatu & Sandal SG"
-				details={<p></p>}
+				whatsapp={whatsapp}
 				modalBox="modal-container-3"
 				modal="modal-3"
+				details={
+					<ul className="text-base md:text-lg w-[250px] md:w-fit list-decimal ml-8">
+						<li>
+							{sepatu[0]}: <span className="font-semibold">Rp.350.000</span>
+						</li>
+						<li>
+							{sepatu[1]}: <span className="font-semibold">Rp.300.000</span>
+						</li>
+						<li>
+							{sepatu[2]}: <span className="font-semibold">Rp.100.000</span>
+						</li>
+						<li>
+							{sepatu[3]}: <span className="font-semibold">Rp.150.000</span>
+						</li>
+						<li>
+							{sepatu[4]}: <span className="font-semibold">Rp.125.000</span>
+						</li>
+						<li>
+							{sepatu[5]}: <span className="font-semibold">Rp.60.000</span>
+						</li>
+						<li>
+							{sepatu[6]}: <span className="font-semibold">Rp.110.000</span>
+						</li>
+						<li>
+							{sepatu[7]}: <span className="font-semibold">Rp.135.000</span>
+						</li>
+						{sepatu[8]}
+					</ul>
+				}
 			/>
 			<Cards
 				btn_id="btn-order-3"

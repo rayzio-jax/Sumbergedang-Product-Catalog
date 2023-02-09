@@ -1,16 +1,23 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
 import Cards from "../Cards";
 import Modals from "../Modals";
 
 export default function KrupukPuli() {
+	const whatsapp = "6285764201743";
 	return (
 		<>
 			<Modals
 				title="Krupuk Puli SG"
-				details={<p></p>}
+				whatsapp={whatsapp}
 				modalBox="modal-container-4"
 				modal="modal-4"
+				details={
+					<p className="text-base md:text-lg w-[250px] md:w-fit ml-8">
+						Dibandrol dengan harga{" "}
+						<span className="font-semibold">Rp.13.000</span>. <br />
+						Untuk daftar barang lainnya silahkan hubungi seller.
+					</p>
+				}
 			/>
 			<Cards
 				btn_id="btn-order-4"

@@ -1,16 +1,28 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
 import Cards from "../Cards";
 import Modals from "../Modals";
 
 export default function BumbuPecel() {
+	const whatsapp = "6285330017966";
+	const bumbu = ["180gr", "1/2kg", "Lebih lengkapnya silahkan hubungi seller."];
 	return (
 		<>
 			<Modals
 				title="Bumbu Pecel SG"
-				details={<p></p>}
+				whatsapp={whatsapp}
 				modalBox="modal-container-10"
 				modal="modal-10"
+				details={
+					<ul className="text-base md:text-lg w-[250px] md:w-fit list-decimal ml-8">
+						<li>
+							{bumbu[0]}: <span className="font-semibold">Rp.10.000</span>
+						</li>
+						<li>
+							{bumbu[1]}: <span className="font-semibold">Rp.27.000</span>
+						</li>
+						{bumbu[2]}
+					</ul>
+				}
 			/>
 			<Cards
 				btn_id="btn-order-10"

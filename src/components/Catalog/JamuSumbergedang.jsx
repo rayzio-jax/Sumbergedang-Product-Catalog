@@ -4,13 +4,38 @@ import Cards from "../Cards";
 import Modals from "../Modals";
 
 export default function JamuSumbergedang() {
+	const whatsapp = "6281234002264";
+	const jamu = [
+		"Beras Kencur 300ml",
+		"Sinom 300ml",
+		"Beras Kencur 1,5litre",
+		"Sinom 1,5litre",
+		"Lebih lengkapnya silahkan hubungi seller.",
+	];
 	return (
 		<>
 			<Modals
 				title="Jamu Sumbergedang"
-				details={<p></p>}
+				whatsapp={whatsapp}
 				modalBox="modal-container-2"
 				modal="modal-2"
+				details={
+					<ul className="text-base md:text-lg w-[250px] md:w-fit list-decimal ml-8">
+						<li>
+							{jamu[0]}: <span className="font-semibold">Rp.3000</span>
+						</li>
+						<li>
+							{jamu[1]}: <span className="font-semibold">Rp.3000</span>
+						</li>
+						<li>
+							{jamu[2]}: <span className="font-semibold">Rp.13.000</span>
+						</li>
+						<li>
+							{jamu[3]}: <span className="font-semibold">Rp.12.000</span>
+						</li>
+						{jamu[4]}
+					</ul>
+				}
 			/>
 			<Cards
 				btn_id="btn-order-2"

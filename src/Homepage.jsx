@@ -58,7 +58,10 @@ export default function Homepage() {
 					<br /> <br /> Desa Sumbergedang terdiri dari 13 (Tiga Belas) Dusun
 					terbagi atas 50 RT dan 24 RW, yaitu :
 				</p>
-				<ul className="font-montserrat text-white text-xl md:text-4xl">
+				<ul
+					id="list-desa"
+					className="font-montserrat text-white text-xl md:text-4xl"
+				>
 					<li data-aos="fade-right">Dusun Kedondong</li>
 					<li data-aos="fade-right">Dusun Kemisik</li>
 					<li data-aos="fade-right">Dusun Sukun</li>
