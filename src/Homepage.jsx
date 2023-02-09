@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 export default function Homepage() {
 	return (
-		<div id="homepage">
+		<div id="homepage" className="homepage">
 			<Helmet>
 				<meta charSet="utf-8" />
 				<title>Profil Sumbergedang</title>
@@ -41,7 +41,7 @@ export default function Homepage() {
 			</Carousel>
 			<br />
 			<div className="container flex flex-col">
-				<p className="text-white font-poppins text-lg md:text-2xl md:text-justify first-letter:text-2xl first-letter:md:text-5xl">
+				<p className="text-white font-montserrat text-lg md:text-2xl md:text-justify first-letter:text-2xl first-letter:md:text-5xl">
 					Desa Sumbergedang merupakan salah satu desa yang terletak di Kecamatan
 					Pandaan, Kabupaten Pasuruan, Provinsi Jawa Timur. Desa ini memiliki 2
 					buah lokasi wisata yang sedang dikembangkan yaitu{" "}
@@ -58,7 +58,7 @@ export default function Homepage() {
 					<br /> <br /> Desa Sumbergedang terdiri dari 13 (Tiga Belas) Dusun
 					terbagi atas 50 RT dan 24 RW, yaitu :
 				</p>
-				<ul className="text-white text-xl md:text-4xl">
+				<ul className="font-montserrat text-white text-xl md:text-4xl">
 					<li data-aos="fade-right">Dusun Kedondong</li>
 					<li data-aos="fade-right">Dusun Kemisik</li>
 					<li data-aos="fade-right">Dusun Sukun</li>
