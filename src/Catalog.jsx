@@ -6,9 +6,16 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Cards from "./components/Cards";
 import ShinyButton from "./components/ShinyButton";
 import $ from "jquery";
+import Modals from "./components/Modals";
 import "./sass/Catalog.scss";
 
 export default function Catalog() {
+	$("#card-btn").on("click", () => {
+		$(".modal-container, .modal").fadeIn("slow");
+	});
+	$(".close").on("click", () => {
+		$(".modal-container, .modal").fadeOut("slow");
+	});
 	const number1 = "6282334721859";
 	const title = "Pilih Produk";
 	const boneka = ["Boneka Panda", "Boneka Beruang", "Boneka Jerapah"];
@@ -43,16 +50,45 @@ export default function Catalog() {
 				</Link>
 			</div>
 			<div className="container mx-auto flex flex-wrap justify-evenly duration-300">
+				<Modals
+					title="Cemal-cemil Buk Su"
+					details={
+						<p className="text-md md:text-lg w-[250px] md:w-fit">
+							Di bandroll dengan harga mulai dari{" "}
+							<span className="font-semibold">Rp.7500 - Rp.20.000</span>
+						</p>
+					}
+					modalBox="modal-container-1"
+					modal="modal-1"
+				/>
 				<Cards
 					btn_id="btn-order-1"
 					image={
 						<Carousel>
 							<Carousel.Item>
-								<img src="" alt="" />
+								<img
+									src="/product/cemil buk su/kuping-gajah.png"
+									alt="kuping gajah"
+								/>
+							</Carousel.Item>
+							<Carousel.Item>
+								<img
+									src="/product/cemil buk su/pastel-mini.png"
+									alt="pastel mini"
+								/>
+							</Carousel.Item>
+							<Carousel.Item>
+								<img
+									src="/product/cemil buk su/stik-bawang.png"
+									alt="stik bawang"
+								/>
+							</Carousel.Item>
+							<Carousel.Item>
+								<img src="/product/cemil buk su/untir.png" alt="untir untir" />
 							</Carousel.Item>
 						</Carousel>
 					}
-					name="Cemal-cemil Bu Su"
+					name="Cemal-cemil Buk Su"
 					description={
 						<p className="card-text">
 							Menyediakan beraneka macam kue kering dan kue basah seperti kuping
@@ -60,10 +96,35 @@ export default function Catalog() {
 							pesanan di Hari Raya, Acara Hajatan dan Acara Penting lainnya.
 						</p>
 					}
+					modalOpen={"#modal-container-1, #modal-1"}
+				/>
+				<Modals
+					title="Jamu Sumbergedang"
+					details={<p></p>}
+					modalBox="modal-container-2"
+					modal="modal-2"
 				/>
 				<Cards
 					btn_id="btn-order-2"
-					image={<img src="/product/product1.jpg" alt="products-card" />}
+					image={
+						<Carousel>
+							<Carousel.Item>
+								<img src="/product/jamu/sinom.png" alt="sinom" />
+							</Carousel.Item>
+							<Carousel.Item>
+								<img
+									src="/product/jamu/beras-kencur-mini.png"
+									alt="beras kencur botol kecil"
+								/>
+							</Carousel.Item>
+							<Carousel.Item>
+								<img
+									src="/product/jamu/beras-kencur-big.png"
+									alt="beras kencur botol besar"
+								/>
+							</Carousel.Item>
+						</Carousel>
+					}
 					name="Jamu"
 					description={
 						<p className="card-text">
@@ -74,6 +135,7 @@ export default function Catalog() {
 							kedalam lemari es.
 						</p>
 					}
+					modalOpen={"#modal-container-2, #modal-2"}
 				/>
 				<Cards
 					btn_id="btn-order-3"

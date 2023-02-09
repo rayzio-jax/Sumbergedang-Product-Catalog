@@ -1,0 +1,95 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
+$font: "Source Sans Pro", sans-serif;
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.modal-flex {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+.modal-container {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(7.4px);
+	-webkit-backdrop-filter: blur(7.4px);
+	&.active {
+		display: block;
+	}
+}
+
+.modal {
+	display: none;
+	position: relative;
+	@apply w-[300px] h-[500px] md:h-[400px] md:w-[660px];
+	background: #fff;
+	border: solid 2px #000;
+	border-radius: 20px;
+	&.active {
+		display: block;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+		@apply w-[200px] md:w-fit;
+		.title {
+			@apply w-[200px] md:w-fit text-[1.3rem] md:text-[2rem];
+			font-weight: 600;
+			font-family: "Montserrat", sans-serif;
+		}
+	}
+	.close {
+		font-family: $font;
+		cursor: pointer;
+		background-color: #24252a;
+		width: 50px;
+		height: 50px;
+		border-radius: 0 0 0 12px;
+		text-align: center;
+		line-height: 50px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: #999;
+		font-size: 40px;
+		transition: 0.3s;
+		&:hover {
+			color: lighten($color: #999, $amount: 100%);
+		}
+		span {
+			transform: rotate(45deg);
+			display: block;
+		}
+	}
+}
+
+.modal-btn {
+	display: flex;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	padding: 10px;
+	background-color: #24252a;
+	transition: 0.5s;
+	&:hover {
+		background-color: lighten($color: #24252a, $amount: 10%);
+	}
+}
