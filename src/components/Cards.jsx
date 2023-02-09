@@ -1,6 +1,5 @@
 import "./style/Cards.scss";
 import $ from "jquery";
-import Modals from "./Modals";
 
 export default function Cards(props) {
 	return (
