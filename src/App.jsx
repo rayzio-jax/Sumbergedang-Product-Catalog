@@ -3,6 +3,7 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Homepage from "./Homepage";
 import Catalog from "./Catalog";
+import PageNotFound from "./PageNotFound";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 				<Routes>
 					<Route index path="/" element={<Homepage />} />
 					<Route path="/katalog" element={<Catalog />} />
+					<Route path="*" element={<PageNotFound />} />
 				</Routes>
 			</Router>
 		</div>
