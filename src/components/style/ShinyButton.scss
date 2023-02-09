@@ -4,7 +4,7 @@
 	transform: translate(0);
 	background: #6643b5;
 	margin: 1.3rem;
-	@apply w-[100px] md:w-[200px] text-[.8rem] md:text-[1rem] leading-[3];
+	@apply w-fit px-2 md:px-0 md:w-[200px] text-[.8rem] md:text-[1rem] leading-[3];
 	border: 2px solid #fff;
 	outline: 0;
 	font-family: "Montserrat", sans-serif;
