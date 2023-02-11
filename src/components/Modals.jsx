@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import $ from "jquery";
 import "./style/Modals.scss";
 
 export default function Modals(props) {
-	const whatsappText =
-		"Halo, produk apa saja yang dijual disini? Apakah Saya bisa melihat daftar jualnya?";
 	return (
 		<div id={props.modalBox} className="modal-container">
 			<div className="modal-flex">
@@ -34,6 +32,7 @@ export default function Modals(props) {
 							</p>
 							<div>{props.details}</div>
 						</div>
+						{props.additional}
 					</div>
 					<div className="modal-btn flex items-center">
 						<div className="flex gap-x-1 md:gap-x-4 justify-center items-center md:justify-start">
@@ -50,14 +49,16 @@ export default function Modals(props) {
 								/>
 							</svg>
 							<p className="text-base md:text-lg font-montserrat tracking-wider">
-								+{props.whatsapp}
+								{props.whatsapp}
 							</p>
 						</div>
 						<button
-							className="contact-seller"
 							onClick={() => {
+								const whatsappText =
+									"Halo, produk apa saja yang dijual disini? Apakah Saya bisa melihat daftar jualnya?";
 								window.location = `https://api.whatsapp.com/send?phone=${props.whatsapp}&text=${whatsappText}`;
 							}}
+							className="contact-seller"
 						>
 							Hubungi Seller
 						</button>

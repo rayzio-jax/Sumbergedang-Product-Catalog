@@ -95,9 +95,10 @@ $font: "Source Sans Pro", sans-serif;
 .contact-seller {
 	display: flex;
 	align-items: center;
-	@apply grow md:text-lg text-base font-montserrat bg-[#453ed3] hover:bg-[#252089] absolute bottom-0 right-0 p-2 md:p-4 h-full;
+	background-color: #453ed3;
 	transition: 0.5s;
+	@apply grow md:text-lg text-base font-montserrat absolute bottom-0 right-0 p-2 md:p-4 h-full;
 	&:hover {
-		background-color: lighten($color: #24252a, $amount: 10%);
+		background-color: darken($color: #453ed3, $amount: 10%);
 	}
 }
