@@ -4,7 +4,6 @@ import ShinyButton from "./components/ShinyButton";
 import $ from "jquery";
 import "./sass/Catalog.scss";
 import CemilanBukSu from "./components/Catalog/CemilanBukSu";
-import JamuSumbergedang from "./components/Catalog/JamuSumbergedang";
 import SepatuSandal from "./components/Catalog/SepatuSandal";
 import KrupukPuli from "./components/Catalog/KrupukPuli";
 import AnekaBoneka from "./components/Catalog/AnekaBoneka";
@@ -13,6 +12,11 @@ import KripikPisangRaja from "./components/Catalog/KripikPisangRaja";
 import MaduAsli from "./components/Catalog/MaduAsli";
 import RempeyekSG from "./components/Catalog/RempeyekSG";
 import BumbuPecel from "./components/Catalog/BumbuPecel";
+import JamuManjakaniKunyit from "./components/Catalog/JamuManjakaniKunyit";
+import JamuSumbergedang from "./components/Catalog/JamuSumbergedang";
+import KrupukPasir from "./components/Catalog/KrupukPasir";
+import KripikTalas from "./components/Catalog/KripikTalas";
+import KripikTempe from "./components/Catalog/KripikTempe";
 
 export default function Catalog() {
 	$("#card-btn").on("click", () => {
@@ -65,6 +69,10 @@ export default function Catalog() {
 				<MaduAsli />
 				<RempeyekSG />
 				<BumbuPecel />
+				<JamuManjakaniKunyit />
+				<KrupukPasir />
+				<KripikTalas />
+				<KripikTempe />
 			</div>
 		</div>
 	);
