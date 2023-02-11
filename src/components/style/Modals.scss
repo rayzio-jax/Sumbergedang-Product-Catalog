@@ -90,13 +90,13 @@ $font: "Source Sans Pro", sans-serif;
 .modal-btn {
 	justify-content: center;
 	align-items: center;
-	@apply flex flex-col md:flex-row gap-y-6 md:gap-x-[200px] my-10;
+	@apply flex flex-col md:flex-row gap-y-6 md:gap-x-[70px] my-10;
 	.phone-number {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		column-gap: 10px;
-		@apply font-montserrat font-bold text-[.9rem] md:text-[1.3rem] gap-x-5;
+		@apply font-montserrat font-bold text-[.9rem] md:text-[1.3rem] gap-x-5 w-[200px] md:w-[400px];
 	}
 	.contact-btn {
 		background-color: #ac40ffff;
@@ -109,7 +109,7 @@ $font: "Source Sans Pro", sans-serif;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 		@apply md:text-[1.2rem];
 		&:hover {
-			background-color: darken($color: #ac40ffff, $amount: 10%);
+			background-color: lighten($color: #ac40ffff, $amount: 10%);
 			@apply text-white;
 		}
 	}
