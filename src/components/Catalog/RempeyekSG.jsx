@@ -10,7 +10,7 @@ export default function RempeyekSG() {
 		<>
 			<Modals
 				title="Rempeyek Sumbergedang"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-9"
 				modal="modal-9"
 				details={

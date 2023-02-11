@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
 import Cards from "../Cards";
 import Modals from "../Modals";
 
 export default function JamuSumbergedang() {
-	const whatsapp = "6281234002264";
+	const [whatsapp, setWhatsapp] = useState("");
+	const [code, setCode] = useState("Pilih nomor yang ingin Anda hubungi!");
 	const jamu = [
 		"Beras Kencur 300ml",
 		"Sinom 300ml",
@@ -16,25 +17,61 @@ export default function JamuSumbergedang() {
 		<>
 			<Modals
 				title="Jamu Sumbergedang"
-				whatsapp={whatsapp}
+				whatsapp={code + whatsapp}
 				modalBox="modal-container-2"
 				modal="modal-2"
+				additional={
+					<div className="flex flex-wrap flex-col text-xl my-4 gap-y-3 gap-x-6">
+						<h2 className="grow">Hubungi:</h2>
+						<button
+							onClick={() => {
+								setCode("+");
+								setWhatsapp("6281234002264");
+							}}
+							className="hover:bg-purple-400 hover:text-neutral-50 duration-300 p-2 rounded-lg"
+						>
+							Ibu Darmiyati
+						</button>
+						<button
+							onClick={() => {
+								setCode("+");
+								setWhatsapp("62343637428");
+							}}
+							className="hover:bg-purple-400 hover:text-neutral-50 duration-300 p-2 rounded-lg"
+						>
+							Ibu Suparmi
+						</button>
+					</div>
+				}
 				details={
-					<ul className="text-base md:text-lg w-[250px] md:w-fit list-decimal ml-8">
-						<li>
-							{jamu[0]}: <span className="font-semibold">Rp.3000</span>
-						</li>
-						<li>
-							{jamu[1]}: <span className="font-semibold">Rp.3000</span>
-						</li>
-						<li>
-							{jamu[2]}: <span className="font-semibold">Rp.13.000</span>
-						</li>
-						<li>
-							{jamu[3]}: <span className="font-semibold">Rp.12.000</span>
-						</li>
-						{jamu[4]}
-					</ul>
+					<>
+						<h2 className="text-xl mt-2">Jamu Ibu Darmiyati</h2>
+						<ul className="text-base md:text-lg w-[250px] md:w-fit list-decimal ml-8">
+							<li>
+								{jamu[0]}: <span className="font-semibold">Rp.3000</span>
+							</li>
+							<li>
+								{jamu[1]}: <span className="font-semibold">Rp.3000</span>
+							</li>
+							<li>
+								{jamu[2]}: <span className="font-semibold">Rp.13.000</span>
+							</li>
+							<li>
+								{jamu[3]}: <span className="font-semibold">Rp.12.000</span>
+							</li>
+							{jamu[4]}
+						</ul>
+						<h2 className="text-xl mt-2">Jamu Ibu Suparmi</h2>
+						<ul className="text-base md:text-lg w-[250px] md:w-fit list-decimal ml-8">
+							<li>
+								{jamu[2]}: <span className="font-semibold">Rp.13.000</span>
+							</li>
+							<li>
+								{jamu[3]}: <span className="font-semibold">Rp.13.000</span>
+							</li>
+							{jamu[4]}
+						</ul>
+					</>
 				}
 			/>
 			<Cards
@@ -57,12 +94,6 @@ export default function JamuSumbergedang() {
 							<img
 								src="/product/jamu/beras-kencur-big.png"
 								alt="beras kencur botol besar"
-							/>
-						</Carousel.Item>
-						<Carousel.Item>
-							<img
-								src="/product/jamu/manjakani-kunyit-asam.png"
-								alt="jamu manjakani dan kunyit asam"
 							/>
 						</Carousel.Item>
 					</Carousel>

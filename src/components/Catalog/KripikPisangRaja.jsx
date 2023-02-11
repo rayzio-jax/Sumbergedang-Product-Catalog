@@ -13,7 +13,7 @@ export default function KripikPisangRaja() {
 		<>
 			<Modals
 				title="Kripik Pisang Raja Nangka"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-7"
 				modal="modal-7"
 				details={

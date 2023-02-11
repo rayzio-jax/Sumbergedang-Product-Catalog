@@ -9,7 +9,7 @@ export default function BumbuPecel() {
 		<>
 			<Modals
 				title="Bumbu Pecel SG"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-10"
 				modal="modal-10"
 				details={

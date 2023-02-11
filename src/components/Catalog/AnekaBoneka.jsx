@@ -12,12 +12,11 @@ export default function AnekaBoneka() {
 		"Boneka Jerapah Besar",
 		"Lebih lengkapnya silahkan hubungi seller.",
 	];
-
 	return (
 		<>
 			<Modals
 				title="Aneka Kerajinan Boneka SG"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-5"
 				modal="modal-5"
 				details={

@@ -9,7 +9,7 @@ export default function CemilanBukSu() {
 		<>
 			<Modals
 				title="Cemal-Cemil Buk Su"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-1"
 				modal="modal-1"
 				details={

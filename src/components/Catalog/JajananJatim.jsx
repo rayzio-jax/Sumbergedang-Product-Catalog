@@ -14,7 +14,7 @@ export default function JajananJatim() {
 		<>
 			<Modals
 				title="Oleh-oleh Jawa Timur SG"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-6"
 				modal="modal-6"
 				details={

@@ -20,7 +20,7 @@ export default function SepatuSandal() {
 		<>
 			<Modals
 				title="Sepatu & Sandal SG"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-3"
 				modal="modal-3"
 				details={

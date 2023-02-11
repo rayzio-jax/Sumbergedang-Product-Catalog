@@ -14,7 +14,7 @@ export default function MaduAsli() {
 		<>
 			<Modals
 				title="Madu Asli SG"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-8"
 				modal="modal-8"
 				details={

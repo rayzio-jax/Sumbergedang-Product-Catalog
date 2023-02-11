@@ -8,7 +8,7 @@ export default function KrupukPuli() {
 		<>
 			<Modals
 				title="Krupuk Puli SG"
-				whatsapp={whatsapp}
+				whatsapp={"+" + whatsapp}
 				modalBox="modal-container-4"
 				modal="modal-4"
 				details={
