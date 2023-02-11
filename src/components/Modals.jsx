@@ -36,16 +36,10 @@ export default function Modals(props) {
 							<div>{props.details}</div>
 						</div>
 						{props.additional}
-					</div>
-					<div className="sticky bottom-0">
-						<div className="modal-btn flex items-center">
-							<Whatsapp size={24} color="#47D42FFF" className="ml-1 mr-3" />
-							<div className="flex gap-x-1 md:gap-x-4 justify-center items-center md:justify-start">
-								<p className="text-[.8rem] md:text-lg font-montserrat tracking-wider w-[160px] md:w-full">
-									{props.whatsapp}
-								</p>
-							</div>
+						<div className="modal-btn">
+							<div className="phone-number">{props.whatsapp}</div>
 							<button
+								className="contact-btn"
 								onClick={() => {
 									const whatsappText =
 										"Halo, produk apa saja yang dijual disini? Apakah Saya bisa melihat daftar jualnya?";
@@ -60,7 +54,6 @@ export default function Modals(props) {
 										window.location = `https://api.whatsapp.com/send?phone=${props.whatsapp}&text=${whatsappText}`;
 									}
 								}}
-								className="contact-seller"
 							>
 								Hubungi Seller
 							</button>

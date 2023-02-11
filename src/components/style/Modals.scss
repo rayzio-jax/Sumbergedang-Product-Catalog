@@ -49,7 +49,7 @@ $font: "Source Sans Pro", sans-serif;
 		display: flex;
 		flex-direction: column;
 		padding: 30px;
-		@apply w-[200px] md:w-fit;
+		@apply w-[300px] md:w-fit;
 		.title {
 			@apply w-fit md:w-full text-[1.3rem] md:text-[2rem];
 			font-weight: 600;
@@ -61,48 +61,56 @@ $font: "Source Sans Pro", sans-serif;
 		position: sticky;
 		top: 0;
 		@apply scrollbar-none;
-		.close {
+	}
+	.close {
+		display: block;
+		position: absolute;
+		right: 0;
+		border-radius: 0 0 0 12px;
+		font-family: $font;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		background-color: #24252a;
+		text-align: center;
+		line-height: 50px;
+		color: #999;
+		font-size: 40px;
+		transition: 0.3s;
+		&:hover {
+			color: lighten($color: #999, $amount: 100%);
+		}
+		span {
+			transform: rotate(45deg);
 			display: block;
-			position: absolute;
-			right: 0;
-			border-radius: 0 0 0 12px;
-			font-family: $font;
-			cursor: pointer;
-			width: 50px;
-			height: 50px;
-			background-color: #24252a;
-			text-align: center;
-			line-height: 50px;
-			color: #999;
-			font-size: 40px;
-			transition: 0.3s;
-			&:hover {
-				color: lighten($color: #999, $amount: 100%);
-			}
-			span {
-				transform: rotate(45deg);
-				display: block;
-			}
 		}
 	}
 }
 
 .modal-btn {
-	display: flex;
-	width: 100%;
-	position: absolute;
-	color: #fff;
-	padding: 10px;
-	background-color: #24252a;
-}
-
-.contact-seller {
-	display: flex;
+	justify-content: center;
 	align-items: center;
-	background-color: #453ed3;
-	transition: 0.5s;
-	@apply grow md:text-lg text-[.9rem] font-montserrat absolute right-0 p-2 md:p-4 h-full;
-	&:hover {
-		background-color: darken($color: #453ed3, $amount: 10%);
+	@apply flex flex-col md:flex-row gap-y-6 md:gap-x-[200px] my-10;
+	.phone-number {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 10px;
+		@apply font-montserrat font-bold text-[.9rem] md:text-[1.3rem] gap-x-5;
+	}
+	.contact-btn {
+		background-color: #ac40ffff;
+		font-size: 0.9rem;
+		font-family: "Montserrat", sans-serif;
+		padding: 20px;
+		transition: 300ms ease-in-out;
+		border-radius: 10px;
+		font-weight: 600;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		@apply md:text-[1.2rem];
+		&:hover {
+			background-color: darken($color: #ac40ffff, $amount: 10%);
+			@apply text-white;
+		}
 	}
 }
