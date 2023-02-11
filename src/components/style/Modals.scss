@@ -56,28 +56,33 @@ $font: "Source Sans Pro", sans-serif;
 			font-family: "Montserrat", sans-serif;
 		}
 	}
-	.close {
-		position: fixed;
-		font-family: $font;
-		cursor: pointer;
-		width: 50px;
-		height: 50px;
-		background-color: #24252a;
-		border-radius: 0 0 0 12px;
-		text-align: center;
-		line-height: 50px;
-		position: absolute;
+	.close-box {
+		width: 100%;
+		position: sticky;
 		top: 0;
-		right: 0;
-		color: #999;
-		font-size: 40px;
-		transition: 0.3s;
-		&:hover {
-			color: lighten($color: #999, $amount: 100%);
-		}
-		span {
-			transform: rotate(45deg);
+		@apply scrollbar-none;
+		.close {
 			display: block;
+			position: absolute;
+			right: 0;
+			border-radius: 0 0 0 12px;
+			font-family: $font;
+			cursor: pointer;
+			width: 50px;
+			height: 50px;
+			background-color: #24252a;
+			text-align: center;
+			line-height: 50px;
+			color: #999;
+			font-size: 40px;
+			transition: 0.3s;
+			&:hover {
+				color: lighten($color: #999, $amount: 100%);
+			}
+			span {
+				transform: rotate(45deg);
+				display: block;
+			}
 		}
 	}
 }
@@ -86,7 +91,6 @@ $font: "Source Sans Pro", sans-serif;
 	display: flex;
 	width: 100%;
 	position: absolute;
-	bottom: 0;
 	color: #fff;
 	padding: 10px;
 	background-color: #24252a;
@@ -97,7 +101,7 @@ $font: "Source Sans Pro", sans-serif;
 	align-items: center;
 	background-color: #453ed3;
 	transition: 0.5s;
-	@apply grow md:text-lg text-base font-montserrat absolute bottom-0 right-0 p-2 md:p-4 h-full;
+	@apply grow md:text-lg text-[.9rem] font-montserrat absolute right-0 p-2 md:p-4 h-full;
 	&:hover {
 		background-color: darken($color: #453ed3, $amount: 10%);
 	}

@@ -28,7 +28,7 @@ export default function JamuSumbergedang() {
 								setCode("+");
 								setWhatsapp("6281234002264");
 							}}
-							className="hover:bg-purple-400 hover:text-neutral-50 duration-300 p-2 rounded-lg"
+							className="hover:bg-purple-300 hover:text-neutral-50 duration-300 p-2 rounded-lg border-solid border-purple-300 border-2"
 						>
 							Ibu Darmiyati
 						</button>
@@ -37,7 +37,7 @@ export default function JamuSumbergedang() {
 								setCode("+");
 								setWhatsapp("62343637428");
 							}}
-							className="hover:bg-purple-400 hover:text-neutral-50 duration-300 p-2 rounded-lg"
+							className="hover:bg-purple-300 hover:text-neutral-50 duration-300 p-2 rounded-lg border-solid border-purple-300 border-2"
 						>
 							Ibu Suparmi
 						</button>
